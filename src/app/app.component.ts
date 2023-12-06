@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Customized Components';
 
-  items = [
+  progressItems = [
     { name: 'HTML', percent: 90 },
     { name: 'CSS', percent: 60 },
     { name: 'jQuery', percent: 85 },
