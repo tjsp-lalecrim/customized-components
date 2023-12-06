@@ -1,0 +1,8 @@
+<div class="wrapper">
+    <div class="input-data">
+        <input #input type="text" [ngClass]="isDirty ? 'dirty' : ''" required (focus)="valueChange()"
+            (keyup)="valueChange()">
+        <label>Name</label>
+    </div>
+    <div *ngIf="isDirty && !isValid" class="invalid-alert">Required</div>
+</div>
