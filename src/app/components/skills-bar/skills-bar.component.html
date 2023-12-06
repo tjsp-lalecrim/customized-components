@@ -1,0 +1,12 @@
+<div class="skills-bar">
+    <div *ngFor="let item of items" class="bar">
+        <div class="info">
+            <span>{{item.name}}</span>
+            <div class="progress-line">
+                <span [ngStyle]="{'width.%': item.percent}">
+                    {{item.percent}}% &nbsp;
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
